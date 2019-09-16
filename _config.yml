@@ -1,13 +1,14 @@
-title: Sara Gong
-email: saragong@usc.edu
+# _config.yml
+
+# required, replace with your own information -----
+title: hello
+author: Sara Gong
+email: saragong@usc.edu 
 description: > 
-  Economics, math, and philosophy at USC. Conducting research on entrepreneurial 
-  decision-making at Columbia Business School. Los Angeles, California.
+  A minimalist template for designing a personal Github Pages website - without typing a single line of code.
+
+#---------------------------------------------------
 baseurl: ""
-url: "https://saragong.github.io/"
-github_username:  saragong
-author: sara gong
-linkedin: saragong
 
 plugins:
   - jekyll-feed

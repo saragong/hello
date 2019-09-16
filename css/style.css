@@ -39,14 +39,14 @@ Custom Styles Adapted from Twenty by HTML5 Up
 		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #3fb1a3;
+		color: none;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color:#78b3dd;
+			color:rgb(79, 166, 209);
 		}
 
 	strong, b {
@@ -146,7 +146,7 @@ Custom Styles Adapted from Twenty by HTML5 Up
 		}
 
 		header.special h2 + p {
-			margin-bottom: 0;
+			margin-bottom: 1em;
 			padding-top: 1.5em;
 		}
 
@@ -663,7 +663,7 @@ Custom Styles Adapted from Twenty by HTML5 Up
 			}
 
 			.dropotron > li:hover > a {
-				background: #83d3c9;
+				background: rgb(79, 166, 209);
 				color: white;
 			}
 

@@ -85,7 +85,7 @@
 
               <section class="special container" style="margin-bottom:10em">
 
-                  <div style="padding: 0 1em; margin-top:1em; text-align:center"> 
+                  <div style="padding: 0 1em; text-align:center"> 
                     {{ content }}</div>
       
                   <!-- button -->
@@ -93,7 +93,7 @@
                   <section class="wrapper style1 container special">
                         <footer class="major">
                             <ul class="buttons">
-                              <li><a href="'{{ page.about_button }}'" class="button">{{ page.about_button_label | markdownify}}</a></li>
+                              <li><a href="'{{ page.about_button }}'" class="button">{{ page.about_button_label }}</a></li>
                             </ul>
                         </footer>
                   </section>
@@ -137,9 +137,9 @@
             <h2>connect</h2>
           </header>
           <footer style="margin-bottom:8em">
-              {% if site.linkedin %}
+              {% if page.linkedin %}
             <ul class="buttons">
-              <li><a href="https://www.linkedin.com/in/{{ site.linkedin }}" class="button">linkedin</a></li>
+              <li><a href="https://www.linkedin.com/in/{{ page.linkedin }}" class="button">linkedin</a></li>
             </ul>
               {% endif %}
             <ul class="buttons">
@@ -154,21 +154,21 @@
     <footer id="footer">
 
         <ul class="icons">
-            {% if site.twitter_username %}
-            <li><a href="https://twitter.com/{{ site.twitter_username }}" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+            {% if page.twitter_username %}
+            <li><a href="https://twitter.com/{{ page.twitter_username }}" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
             {% endif %}
-            {% if site.facebook_username %}
-            <li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+            {% if page.facebook_username %}
+            <li><a href="https://www.facebook.com/{{ page.facebook_username }}" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
             {% endif %}
-            {% if site.github_username %}
-            <li><a href="https://github.com/{{ site.github_username }}" class="icon circle fa-github"><span class="label">Github</span></a></li>
+            {% if page.github_username %}
+            <li><a href="https://github.com/{{ page.github_username }}" class="icon circle fa-github"><span class="label">Github</span></a></li>
             {% endif %}
         </ul>
 
     <ul class="copyright">
         <li>this website is maintained by {{ site.author}}</li>
         <li>design: <a href="https://github.com/saragong/hello"><strong>hello</strong></a> for github pages</li>
-        <li>adapted from <a href="https://html5up.net/twenty">Twenty</a> by HTML5 Up</li>
+        <li>adapted from <a href="https://html5up.net/twenty"><strong>Twenty</strong></a> by HTML5 Up</li>
     </ul>
 
 </footer>
