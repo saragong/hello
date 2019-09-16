@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <!--HEAD-->
+  <head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="" />
+
+    <!--favicon-->
+    {% if page.favicon %}
+    <link rel="icon" href= "'{{ page.favicon }}'" type="image/x-icon" />
+    {% endif %}
+
+    <!--google analytics-->
+    <meta name="google-site-verification" content="_ingfwzKGk0RIDArHk6VZh4qH4lzTUx2vHb7jclEpTw" />
+    
+    <!--jekyll plugins-->
+    {% feed_meta %}
+    {% seo %}
+
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/jquery.scrollgress.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-wide.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  </head>
+
+
+  <body class="index">
+
+    <!-- HEADER -->		
+    <header id="header">
+      <h1 id="logo" style="text-transform:lowercase">
+        <a href="/">hello</a></h1>
+      <nav id="nav">
+        <ul>
+          <li style="text-transform:lowercase"><a href="/#about">about</a></li>
+          {% if page.portfolio %}
+          <li style="text-transform:lowercase"><a href="/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
+          {% endif %}
+          <li style="text-transform:lowercase"><a href="/#connect">connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BANNER -->		
+    <section id="banner" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
+        url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
+        {% endif %}>
+
+        <div class="inner">
+
+            <h2 style="font-size:3em; text-transform:none">{{ page.banner_title }}</h2>
+            <p style="text-transform:none;">{{ page.banner_subtitle }}</p>
+      
+        </div>
+
+    </section>
+
+<!--CONTENT-->
+
+    <div class="page-content">
+
+        <article id="main">
+            <!-- section: about -->
+              <header class="special container" id="about">
+                <h2 ><strong>about</strong></h2>
+              </header>
+
+              <section class="special container" style="margin-bottom:10em">
+
+                  <div style="padding: 0 1em; margin-top:1em; text-align:center"> 
+                    {{ content }}</div>
+      
+                  <!-- button -->
+                  {% if page.about_button %}
+                  <section class="wrapper style1 container special">
+                        <footer class="major">
+                            <ul class="buttons">
+                              <li><a href="'{{ page.about_button }}'" class="button">{{ page.about_button_label | markdownify}}</a></li>
+                            </ul>
+                        </footer>
+                  </section>
+                {% endif %}      
+              </section>    
+
+            <!-- section: work-->
+            {% if page.portfolio %}
+            <section class="wrapper style3 container special" id="{{ page.portfolio }}">
+					      <header class="special">
+                  <h2><strong>{{ page.portfolio }}</strong></h2>
+                </header>
+                {% for categories in site.data[page.portfolio][page.portfolio] %}
+                <div class="row">
+
+                          <div class="12u">
+                              <h3 style="margin-bottom:2em"><u>{{ categories.category}}</u></h3>
+                          </div>
+
+                          {% for items in categories.items %}
+                          <div class="6u item">
+                            <section>
+                                {% include {{ items.item }} %}
+                            </section>
+                          </div>
+                          {% endfor %}
+                </div>
+
+                {% endfor %}
+
+            </section>
+            {% endif %}
+      </article>
+
+        <!-- section: connect -->
+			<section class="cta" id="connect" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
+      url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
+      {% endif %}>
+			
+          <header class="major">
+            <h2>connect</h2>
+          </header>
+          <footer style="margin-bottom:8em">
+              {% if site.linkedin %}
+            <ul class="buttons">
+              <li><a href="https://www.linkedin.com/in/{{ site.linkedin }}" class="button">linkedin</a></li>
+            </ul>
+              {% endif %}
+            <ul class="buttons">
+              <li><a href="mailto:{{ site.email }}" class="button">contact</a></li>
+            </ul>
+          </footer>
+        
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <ul class="icons">
+            {% if site.twitter_username %}
+            <li><a href="https://twitter.com/{{ site.twitter_username }}" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+            {% endif %}
+            {% if site.facebook_username %}
+            <li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+            {% endif %}
+            {% if site.github_username %}
+            <li><a href="https://github.com/{{ site.github_username }}" class="icon circle fa-github"><span class="label">Github</span></a></li>
+            {% endif %}
+        </ul>
+
+    <ul class="copyright">
+        <li>this website is maintained by {{ site.author}}</li>
+        <li>design: <a href="https://github.com/saragong/hello"><strong>hello</strong></a> for github pages</li>
+        <li>adapted from <a href="https://html5up.net/twenty">Twenty</a> by HTML5 Up</li>
+    </ul>
+
+</footer>
+
+  </body>
+
+</html>

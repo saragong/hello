@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500px" height="500px" viewBox="0 0 500 500" zoomAndPan="disable">
+    <style type="text/css"><![CDATA[
+		line
+		{
+			stroke: rgba(255,255,255,0.2);
+			stroke-width: 1px;
+		}
+    ]]></style>
+</svg>

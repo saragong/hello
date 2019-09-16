@@ -1,0 +1,8 @@
+work:
+  - category: papers
+    items:
+      - item: identity.html
+      - item: financing.html
+  - category: projects
+    items:
+      - item: bblocks.html
