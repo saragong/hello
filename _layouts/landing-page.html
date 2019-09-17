@@ -48,7 +48,9 @@
           {% if page.portfolio %}
           <li style="text-transform:lowercase"><a href="/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
           {% endif %}
-          <li style="text-transform:lowercase"><a href="/#connect">connect</a></li>
+          {% if page.contact %}
+          <li style="text-transform:lowercase"><a href="/#{{ page.contact }}"> {{ page.contact }} </a></li>
+          {% endif %}
         </ul>
       </nav>
     </header>
@@ -100,17 +102,22 @@
 					      <header class="special">
                   <h2><strong>{{ page.portfolio }}</strong></h2>
                 </header>
+                <p>{{ page.portfolio_description }}</p>
                 {% for categories in site.data[page.portfolio][page.portfolio] %}
                 <div class="row">
 
                           <div class="12u">
-                              <h3 style="margin-bottom:2em"><u>{{ categories.category}}</u></h3>
+                              <h3 style="margin-bottom:2em; font-size:1.25em"><strong>{{ categories.category}}</strong></h3>
                           </div>
 
                           {% for items in categories.items %}
                           <div class="6u item">
                             <section>
-                                {% include {{ items.item }} %}
+                              <div class="image featured">
+                                  <img src="{{ items.image }}" alt="" />
+                              </div>
+
+                              {% include {{ items.item }} %}
                             </section>
                           </div>
                           {% endfor %}
@@ -123,25 +130,27 @@
       </article>
 
         <!-- section: connect -->
-			<section class="cta" id="connect" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
+        {% if page.contact %}
+			<section class="cta" id="{{ page.contact }}" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
       url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
       {% endif %}>
 			
           <header class="major">
-            <h2>connect</h2>
+            <h2>{{ page.contact }}</h2>
           </header>
+          {% if page.contact %}
+          <p style="padding: 0em 1em; text-align: center">{{ page.contact_description }}</p>
+          {% endif %}
           <footer style="margin-bottom:8em">
-              {% if page.linkedin %}
+              {% if page.contact_button %}
             <ul class="buttons">
-              <li><a href="https://www.linkedin.com/in/{{ page.linkedin }}" class="button">linkedin</a></li>
+              <li><a href="{{ page.contact_button }}" class="button">{{ page.contact_button_label }}</a></li>
             </ul>
               {% endif %}
-            <ul class="buttons">
-              <li><a href="mailto:{{ site.email }}" class="button">contact</a></li>
-            </ul>
           </footer>
         
         </section>
+        {% endif %}
     </div>
 
     <!-- Footer -->

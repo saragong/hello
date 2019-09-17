@@ -194,6 +194,41 @@ Custom Styles Adapted from Twenty by HTML5 Up
 	text-align:center;
 }
 
+/* Image */
+
+.image {
+	border: 0;
+	position: relative;
+}
+
+	.image:before {
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.image.fit {
+		display: block;
+	}
+
+		.image.fit img {
+			display: block;
+			width: 100%;
+		}
+
+	.image.featured {
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image.featured img {
+			display: block;
+			width: 100%;
+		}
+
 /* Icon */
 
 	.icon {
@@ -754,7 +789,7 @@ Custom Styles Adapted from Twenty by HTML5 Up
 	}
 
 		.cta header {
-			margin-bottom: 5em;
+			margin-bottom: 2em;
 		}
 
 /* Footer */
