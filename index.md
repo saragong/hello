@@ -4,6 +4,7 @@ layout: hello-default
 # using Markdown language, you can customize the following variables!
 
 # these variables are required -------------------------------
+url: "https://saragong.github.io//hello/" # replace with https://*your-username*.github.io/
 banner_title: hello for github pages
 banner_subtitle: a minimalist template for personal websites
 background_image: /images/background.jpeg
