@@ -14,9 +14,9 @@ background_image: /images/background.jpeg
 favicon: /assets/ico/favicon.ico
 
 # social media
-facebook_username: example # your facebook username (the part after "https://www.facebook.com/...")
-twitter_username: example # # your twitter handle
-github_username:  example # your github username
+facebook_username: notsaragong # your facebook username (the part after "https://www.facebook.com/...")
+twitter_username: notsaragong # # your twitter handle
+github_username:  saragong # your github username
 
 # By declaring these variables, you can include a button that links to an external website or to media.
 about_button: https://github.com/saragong/hello # the link
