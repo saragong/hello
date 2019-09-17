@@ -59,12 +59,12 @@
         <a href="/">hello</a></h1>
       <nav id="nav">
         <ul>
-          <li style="text-transform:lowercase"><a href="{{ page.url }}/#about">about</a></li>
+          <li style="text-transform:lowercase"><a href="{{ page.page_url }}/#about">about</a></li>
           {% if page.portfolio %}
-          <li style="text-transform:lowercase"><a href="{{ page.url }}/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
+          <li style="text-transform:lowercase"><a href="{{ page.page_url }}/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
           {% endif %}
           {% if page.cta %}
-          <li style="text-transform:lowercase"><a href="{{ page.url }}/#{{ page.cta }}"> {{ page.cta }} </a></li>
+          <li style="text-transform:lowercase"><a href="{{ page.page_url }}/#{{ page.cta }}"> {{ page.cta }} </a></li>
           {% endif %}
         </ul>
       </nav>
