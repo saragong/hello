@@ -6,7 +6,7 @@ author: Sara Gong
 description: > 
   A minimalist template for designing a personal GitHub Pages website - without typing a single line of code.
 baseurl: ""
-url: https://saragong.github.io//hello # replace with https://*your-username*.github.io/
+url: "https://saragong.github.io//hello/" # replace with https://*your-username*.github.io/
 
 plugins:
   - jekyll-feed
