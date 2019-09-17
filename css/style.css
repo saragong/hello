@@ -417,23 +417,6 @@ Custom Styles Adapted from Twenty by HTML5 Up
 			border-color: inherit;
 		}
 
-		input[type="button"].special,
-		input[type="submit"].special,
-		input[type="reset"].special,
-		.button.special {
-			background: #83d3c9;
-			border-color: #83d3c9;
-			color: white !important;
-		}
-
-			input[type="button"].special:hover,
-			input[type="submit"].special:hover,
-			input[type="reset"].special:hover,
-			.button.special:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
-			}
-
 		input[type="button"].fit,
 		input[type="submit"].fit,
 		input[type="reset"].fit,
@@ -460,30 +443,6 @@ Custom Styles Adapted from Twenty by HTML5 Up
 		.wrapper.style1 {
 			padding: 0;
 		}
-
-		.wrapper.style2 {
-			background-color: #83d3c9;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
-			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
-			color: white;
-		}
-
-			.wrapper.style2 .button:hover {
-				background: rgba(255, 255, 255, 0.15) !important;
-			}
-
-			.wrapper.style2 .button.special {
-				background: white;
-				border-color: white;
-				color: #83d3c9 !important;
-			}
-
-				.wrapper.style2 .button.special:hover {
-					border-color: inherit !important;
-					color: white !important;
-				}
 
 		.wrapper.style3 {
 			background: white;

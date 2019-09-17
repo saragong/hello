@@ -39,8 +39,8 @@ portfolio: work # this is the title of your portfolio
 ---			
 [//]: # (write a bit about yourself here)
 ### why **hello**?  
-
-##### **hello** has a simple goal: to make Github Pages accessible for everyone.  
+  
+**hello** has a simple goal: to make Github Pages accessible for everyone.  
   
 
 **hello** is a minimalist template that lets you design a beautiful website or portfolio on Github Pages - without installing a Ruby
