@@ -36,7 +36,7 @@ $ git clone https://github.com/*your-username*/*your-username*.github.io.git
 ```
 $ git add .
 $ git commit -m "first commit"
-$ git push origin remote
+$ git push origin master
 ```
 
 7. In just a few moments, Github will build your shiny new website at "https://*your-username*.github.io/".
