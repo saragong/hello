@@ -308,7 +308,6 @@ DEPENDENCIES
   bootstrap (~> 4.3.1)
   github-pages
   jekyll-feed
-  jekyll-remote-theme
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo (~> 1.2)

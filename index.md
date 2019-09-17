@@ -4,8 +4,8 @@ layout: landing-page
 # using Markdown language, you can customize the following variables!
 
 # these variables are required -------------------------------
-banner_title: hello
-banner_subtitle: a minimalist template for personal websites on GitHub Pages
+banner_title: hello for github pages
+banner_subtitle: a minimalist template for personal websites
 background_image: /images/background.jpeg
 
 # all of the following variables are optional -----------------
