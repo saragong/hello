@@ -40,8 +40,9 @@ cta_button_label: contact # the label on the button
 ---			
 [//]: # (write a bit about yourself here)
 ### why **hello**?  
-  
-**hello** has a simple goal: to make GitHub Pages accessible to everyone.  
+
+
+### **hello** has a simple goal: to make GitHub Pages accessible to everyone.  
   
 
 **hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
