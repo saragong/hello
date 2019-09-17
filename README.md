@@ -63,6 +63,7 @@ $ git push origin remote
 * `twitter_username`
 * `github_username`
 * `linkedin`
+* `google_analytics` (your Google Analytics Tracking ID)
 
 By declaring these variables, you can include a button that links to an external website or to media.
 * `about_button` (the link)

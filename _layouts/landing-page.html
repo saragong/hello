@@ -17,6 +17,19 @@
     {%- feed_meta -%}
     {%- seo -%}
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {% if page.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ page.google_analytics }}"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ page.google_analytics }}');
+    </script>
+    {% endif %}
+
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/jquery.dropotron.min.js"></script>
     <script src="/js/jquery.scrolly.min.js"></script>
