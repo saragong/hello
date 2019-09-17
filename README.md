@@ -62,6 +62,7 @@ $ git push origin remote
 * `facebook_username`
 * `twitter_username`
 * `github_username`
+* `linkedin`
 
 By declaring these variables, you can include a button that links to an external website or to media.
 * `about_button` (the link)

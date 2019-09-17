@@ -275,6 +275,15 @@ Custom Styles Adapted from Twenty by HTML5 Up
 				.icon.circle.fa-twitter:hover {
 					background: #7fb7d2;
 				}
+			
+			.icon.circle.fa-linkedin-square {
+				background: #0077B5;
+				color: white;
+			}
+
+				.icon.circle.fa-linkedin-square:hover {
+					background: #288bbf;
+				}
 
 			.icon.circle.fa-facebook {
 				background: #7490c3;
