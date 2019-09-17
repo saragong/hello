@@ -3,14 +3,14 @@
 
   <!--HEAD-->
   <head>
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ site.title }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="" />
 
     <!--favicon-->
     {% if page.favicon %}
-    <link rel="icon" href= "'{{ page.favicon }}'" type="image/x-icon" />
+    <link rel="icon" href= "{{ page.favicon }}" type="image/x-icon" />
     {% endif %}
     
     <!--jekyll plugins-->
@@ -48,16 +48,17 @@
           {% if page.portfolio %}
           <li style="text-transform:lowercase"><a href="/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
           {% endif %}
-          {% if page.contact %}
-          <li style="text-transform:lowercase"><a href="/#{{ page.contact }}"> {{ page.contact }} </a></li>
+          {% if page.cta %}
+          <li style="text-transform:lowercase"><a href="/#{{ page.cta }}"> {{ page.cta }} </a></li>
           {% endif %}
         </ul>
       </nav>
     </header>
 
     <!-- BANNER -->		
-    <section id="banner" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
-        url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
+    <section id="banner" 
+    {% if page.background_image %}
+    style="background-image: url('{{ page.background_image }}'); background-attachment: fixed; background-size: cover;"
         {% endif %}>
 
         <div class="inner">
@@ -89,7 +90,7 @@
                   <section class="wrapper style1 container special">
                         <footer class="major">
                             <ul class="buttons">
-                              <li><a href="'{{ page.about_button }}'" class="button">{{ page.about_button_label }}</a></li>
+                              <li><a href="{{ page.about_button }}" class="button">{{ page.about_button_label }}</a></li>
                             </ul>
                         </footer>
                   </section>
@@ -129,22 +130,23 @@
             {% endif %}
       </article>
 
-        <!-- section: connect -->
-        {% if page.contact %}
-			<section class="cta" id="{{ page.contact }}" {% if page.background_image %}style="background-image: url('css/images/background.svg'),
-      url('{{ page.background_image }}'); background-attachment: scroll, fixed; background-size: cover;"
+        <!-- section: cta -->
+        {% if page.cta %}
+      <section class="cta" id="{{ page.cta }}" 
+      {% if page.background_image %}
+      style="background-image: url('{{ page.background_image }}'); background-attachment: fixed; background-size: cover;"
       {% endif %}>
 			
           <header class="major">
-            <h2>{{ page.contact }}</h2>
+            <h2>{{ page.cta }}</h2>
           </header>
-          {% if page.contact %}
-          <p style="padding: 0em 1em; text-align: center">{{ page.contact_description }}</p>
+          {% if page.cta %}
+          <p style="padding: 0em 1em; text-align: center">{{ page.cta_description }}</p>
           {% endif %}
           <footer style="margin-bottom:8em">
-              {% if page.contact_button %}
+              {% if page.cta_button %}
             <ul class="buttons">
-              <li><a href="{{ page.contact_button }}" class="button">{{ page.contact_button_label }}</a></li>
+              <li><a href="{{ page.cta_button }}" class="button">{{ page.cta_button_label }}</a></li>
             </ul>
               {% endif %}
           </footer>

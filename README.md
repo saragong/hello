@@ -15,7 +15,77 @@ The default layout of **hello** is a streamlined single page with three major cu
 
 **hello** is adapted from [Twenty](https://html5up.net/twenty), a responsive, mobile-friendly theme by HTML5 Up.  
 
-## Template information
+## Getting started
+To use **hello**, follow these steps:
+
+1. Click the green "Use this template" on the main page of the **hello** repository.
+
+2. Follow the instructions to create a new repository from **hello**, setting the repository name as "*your-username*.github.io".
+
+3. Under **Settings** for this new repo, navigate to the **GitHub Pages** section and ensure that GitHub Pages is enabled for the `master` branch.
+
+4. On the command line, clone this new repository to your local directory.
+
+```
+$ git clone https://github.com/*your-username*/*your-username*.github.io.git
+```
+
+5. Navigate into the project folder, open the `_config.yml` and `index.md` files in your preferred text editor, and start customizing your website!
+
+6. When you're ready to see your work, commit your changes to the remote directory.
+```
+$ git add .
+$ git commit -m "first commit"
+$ git push origin remote
+```
+
+7. In just a few moments, Github will build your shiny new website at "*your-username*.github.io/".
+
+## Usage
+
+###
+### The following variables are required:
+
+`_config.yml`:
+* `title`
+* `author`
+* `description`
+* `baseurl`  
+
+`index.md`:
+* `banner_title`
+* `banner_subtitle`
+* `background_image`
+
+### The following variables are optional:
+`index.md`:
+* `favicon`
+* `facebook_username`
+* `twitter_username`
+* `github_username`
+
+By declaring these variables, you can include a button that links to an external website or to media.
+* `about_button` (the link)
+* `about_button_label` (the label on the button)
+
+By declaring these variables, you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. In addition, you must 1) create an HTML file in the_includes folder for each project with the text you'd like to display, and 2) create a YAML file in the _data folder describing the order in which each project should be shown and categorized. See `/includes/example.html` and `/_data/work.yml` for examples.
+* `portfolio` (the heading for your portfolio and title of your YAML file)
+* `portfolio_description` (a description to be desplayed below the heading and above the content)
+
+By declaring these variables, you can include a CTA section.
+* `cta` (the heading for your CTA section)
+* `cta_description` (a description to be desplayed below the heading and above the content)
+* `cta_button` (a link to an external website or to media)
+* `cta_button_label` (the label on the button)
+
+## Additional Information
+Created by [Sara Gong](https://saragong.github.io/), University of Southern California.  
+
+This original theme, of which this is an adaptation, is licensed by HTML5 Up under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).  
+
+The images from the demo website are from [Unsplash](https://unsplash.com/).
+
+## Template Information
 Twenty by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -41,23 +111,24 @@ n33.co @n33co dribbble.com/n33
 
 Credits:
 
-	Demo Images:
-		Michael Domaradzki (md.photomerchant.net)
-			"Night Vision"
-			"At the Station II"
-			"Airchitecture II"
-			"Livewires II"
-			"Midnite Xpress I"
+Demo Images:
 
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
+Michael Domaradzki (md.photomerchant.net)
+"Night Vision"
+"At the Station II"
+"Airchitecture II"
+"Livewires II"
+"Midnite Xpress I"
 
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		jquery.dropotron (n33.co)
-		jquery.scrolly (n33.co)
-		jquery.scrollgress (n33.co)
-		skel (n33.co)
+Icons:
+Font Awesome (fortawesome.github.com/Font-Awesome)
+
+Other:
+jQuery (jquery.com)
+html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+CSS3 Pie (css3pie.com)
+background-size polyfill (github.com/louisremi)
+jquery.dropotron (n33.co)
+jquery.scrolly (n33.co)
+jquery.scrollgress (n33.co)
+skel (n33.co)

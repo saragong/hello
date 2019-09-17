@@ -675,7 +675,6 @@ Custom Styles Adapted from Twenty by HTML5 Up
 	#banner {
 		background-attachment: scroll, fixed;
 		background-color: transparent;
-		background-image: url("images/background.svg"), url("../images/background.jpeg");
 		background-position: bottom center, top center;
 		background-repeat: no-repeat;
 		background-size: 25em, cover;
@@ -779,9 +778,9 @@ Custom Styles Adapted from Twenty by HTML5 Up
 	.cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: none;
-		background-image: url("images/background.svg"), url("images/background.svg"), url("images/overlay.png"), url("../images/background.jpeg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-image: none;
+		background-position: top center, bottom center;
+		background-repeat: no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: white;
 		padding: 5em 0em;
