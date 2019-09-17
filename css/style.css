@@ -39,7 +39,7 @@ Custom Styles Adapted from Twenty by HTML5 Up
 		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: none;
+		color: #7c8081;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
