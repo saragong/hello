@@ -4,16 +4,15 @@
 title: hello
 author: Sara Gong
 description: > 
-  A minimalist template for designing a personal Github Pages website - without typing a single line of code.
+  A minimalist template for designing a personal GitHub Pages website - without typing a single line of code.
 baseurl: ""
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
 #---------------------------------------------------
-
-# optional jekyll plugins compatible with Github Pages
-# plugins:
-#  - jekyll-feed
-#  - jekyll-sitemap
-#  - jekyll-seo-tag
 
 exclude:
   - .sass-cache/

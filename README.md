@@ -2,12 +2,12 @@
 
 ## Why **hello**?  
   
-**hello** has a simple goal: to make Github Pages accessible to everyone.  
+**hello** has a simple goal: to make GitHub Pages accessible to everyone.  
   
 
-**hello** is a minimalist template that lets you design a beautiful website or portfolio on Github Pages - without installing a Ruby
+**hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
 development environment, learning to use Jekyll, **or even typing a single line of code**. It's ideal for GitHubbers
-who want to start building their personal website on [Github Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
+who want to start building their personal website on [GitHub Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
   
 
 The default layout of **hello** is a streamlined single page with three major customizable sections: a required "about" section, an optional portfolio, and an optional CTA. Using [Liquid](https://shopify.github.io/liquid/) variables declared by in the config and index files, **hello** offers an easy-to-use design where all customizations necessary for a basic personal website can be written in [Markdown](https://www.markdownguide.org/basic-syntax/).  
@@ -18,7 +18,7 @@ The default layout of **hello** is a streamlined single page with three major cu
 ## Getting started
 To use **hello**, follow these steps:
 
-1. Click the green "Use this template" on the main page of the **hello** repository.
+1. Click the green "Use this template" button on the main page of the **hello** repository.
 
 2. Follow the instructions to create a new repository from **hello**, setting the repository name as "*your-username*.github.io".
 
@@ -39,11 +39,10 @@ $ git commit -m "first commit"
 $ git push origin remote
 ```
 
-7. In just a few moments, Github will build your shiny new website at "*your-username*.github.io/".
+7. In just a few moments, Github will build your shiny new website at "https://*your-username*.github.io/".
 
 ## Usage
 
-###
 ### The following variables are required:
 
 `_config.yml`:

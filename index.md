@@ -5,7 +5,7 @@ layout: landing-page
 
 # these variables are required -------------------------------
 banner_title: hello
-banner_subtitle: a minimalist template for personal websites on Github Pages
+banner_subtitle: a minimalist template for personal websites on GitHub Pages
 background_image: /images/background.jpeg
 
 # all of the following variables are optional -----------------
@@ -41,12 +41,12 @@ cta_button_label: contact # the label on the button
 [//]: # (write a bit about yourself here)
 ### why **hello**?  
   
-**hello** has a simple goal: to make Github Pages accessible to everyone.  
+**hello** has a simple goal: to make GitHub Pages accessible to everyone.  
   
 
-**hello** is a minimalist template that lets you design a beautiful website or portfolio on Github Pages - without installing a Ruby
+**hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
 development environment, learning to use Jekyll, **or even typing a single line of code**. It's ideal for GitHubbers
-who want to start building their personal website on [Github Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
+who want to start building their personal website on [GitHub Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
   
 
 The default layout of **hello** is a streamlined single page with three major customizable sections: a required "about" section, an optional portfolio, and an optional CTA. Using [Liquid](https://shopify.github.io/liquid/) variables declared by in the config and index files, **hello** offers an easy-to-use design where all customizations necessary for a basic personal website can be written in [Markdown](https://www.markdownguide.org/basic-syntax/).  
