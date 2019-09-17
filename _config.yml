@@ -10,6 +10,7 @@ description: >
 #---------------------------------------------------
 baseurl: ""
 
+# optional jekyll plugins compatible with Github Pages
 plugins:
   - jekyll-feed
   - jekyll-sitemap

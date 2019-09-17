@@ -1,8 +1,16 @@
+# this file organizes the items in your portfolio, which are placed in the _includes folder
+# in the root directory
+
 work:
-  - category: papers
+  - category: you can easily include a portfolio to showcase your work!
     items:
-      - item: identity.html
-      - item: financing.html
-  - category: projects
+      - item: example.html
+      - item: example2.html
+      - item: example3.html
+      - item: example3.html
+  - category: you can also organize these items into a custom layout.
     items:
-      - item: bblocks.html
+      - item: example2.html
+      - item: example3.html
+      - item: example2.html
+      - item: example3.html

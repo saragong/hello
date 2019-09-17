@@ -12,15 +12,11 @@
     {% if page.favicon %}
     <link rel="icon" href= "'{{ page.favicon }}'" type="image/x-icon" />
     {% endif %}
-
-    <!--google analytics-->
-    <meta name="google-site-verification" content="_ingfwzKGk0RIDArHk6VZh4qH4lzTUx2vHb7jclEpTw" />
     
     <!--jekyll plugins-->
     {% feed_meta %}
     {% seo %}
 
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/jquery.dropotron.min.js"></script>
     <script src="/js/jquery.scrolly.min.js"></script>
@@ -34,8 +30,6 @@
         <link rel="stylesheet" href="/css/style-wide.css" />
         <link rel="stylesheet" href="/css/style-noscript.css" />
     </noscript>
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
     <meta name="viewport" content="width=device-width">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

@@ -17,11 +17,11 @@ background_image: /images/background.jpeg
 # favicon
 favicon: /assets/ico/favicon.ico
 
-# contact info
-facebook_username: /# # your facebook username (the part after "https://www.facebook.com/...")
-twitter_username: /# # your twitter handle
-github_username: /# # your github username
-linkedin: /# # your linkedin (the part after "https://www.linkedin.com/in/...")
+# social media
+facebook_username: example # your facebook username (the part after "https://www.facebook.com/...")
+twitter_username: example # # your twitter handle
+github_username:  example # your github username
+linkedin: example # your linkedin (the part after "https://www.linkedin.com/in/...")
 
 # you can include a link to an external website or to media in the "about" section
 about_button: https://github.com/saragong/hello
@@ -34,7 +34,7 @@ about_button_label: get hello
 # create a YAML file in the _data folder, describing the order in which each project should 
 # be shown and categorized. see /includes/example.html and /_data/work.yml for examples.
 
-portfolio: work # this is the title of your portfolio
+portfolio: work # this is the title of your portfolio and your YAML file
 
 ---			
 [//]: # (write a bit about yourself here)
